@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="ketqua"></h1>
+<input id="giatri1" type="text" placeholder="Nhập giá trị 1">
+<input id="giatri2" type="text" placeholder="Nhập giá trị 2">
+<button onclick="tinh()">Kết quả</button>
+<script>
+    function tinh(){
+        let a = document.getElementById('giatri1').value;
+        let b = document.getElementById('giatri2').value;
+        let S = a * b ;
+        document.getElementById('ketqua').innerHTML= S;
+    }
+</script>
+</body>
+</html>
