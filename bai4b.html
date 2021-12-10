@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="canha" type="text" placeholder="Nhập cạnh a">
+<input id="canhb" type="text" placeholder="Nhập cạnh b">
+<p id="ketqua"></p>
+<p id="ketqua2"></p>
+<button onclick="tinhtoan()">Kết quả</button>
+<script>
+    function tinhtoan(){
+        let a =parseInt(document.getElementById("canha").value);
+        let b =parseInt(document.getElementById("canhb").value);
+        let e = Math.pow(a, 2);
+        let d = Math.pow(a, b);
+        document.getElementById("ketqua").innerHTML = "a^2= "+e;
+        document.getElementById("ketqua2").innerHTML = "a^b= "+d;
+
+    }
+</script>
+</body>
+</html>
