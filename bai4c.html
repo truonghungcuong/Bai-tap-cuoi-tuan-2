@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhapa" type="text" placeholder="Nhập a">
+<input id="nhapb" type="text" placeholder="Nhập b">
+<button onclick="tinhtong()">Tính</button>
+<p id="ketqua"></p>
+<script>
+    function tinhtong(){
+        let a = +document.getElementById("nhapa").value;
+        let b = +document.getElementById("nhapb").value;
+        let tong = 0;
+        for (i = a;i<=b;i++){
+            tong= tong +i;
+        }
+        document.getElementById("ketqua").innerHTML="tổng các số = "+ tong;
+    }
+</script>
+</body>
+</html>
