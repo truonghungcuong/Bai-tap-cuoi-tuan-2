@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nam" type="text" placeholder="Nhập năm">
+<button onclick="theky()">Tính</button>
+<p id="ketqua"></p>
+<script>
+    function theky(){
+        let nam = parseInt(document.getElementById("nam").value);
+        let theky = parseInt(nam/100);
+        if (nam % 100 === 0){
+            document.getElementById("ketqua").innerHTML= "Năm "+nam+"là thế kỷ"+theky;
+        }else{
+            document.getElementById("ketqua").innerHTML="Năm "+nam+" là thế kỷ "+ parseInt(theky+1);
+        }
+    }
+</script>
+</body>
+</html>
