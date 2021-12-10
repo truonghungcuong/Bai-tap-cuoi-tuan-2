@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="canha" type="text">
+<p id="chuvi"></p>
+<p id="dientich"></p>
+<p id="canh"></p>
+<button onclick="ketqua()">Kết quả</button>
+<script>
+    function ketqua(){
+        let a = document.getElementById("canha").value;
+        let p= a*4;
+        let s= a*a;
+        document.getElementById("chuvi").innerHTML='P= '+ p;
+        document.getElementById("dientich").innerHTML='S= '+ s;
+        document.getElementById("canh").innerHTML='Cạnh a= '+ a;
+    }
+</script>
+</body>
+</html>
